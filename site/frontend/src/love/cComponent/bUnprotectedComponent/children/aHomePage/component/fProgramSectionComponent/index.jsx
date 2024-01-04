@@ -21,7 +21,7 @@ import data from "src/love/iTemplate/pages/Presentation/sections/data/pagesData"
 function ProgramSectionComponent({ Redux }) {
   const renderData = Redux.state.ReceivedObject?.Retrieve?.ProgramSectionRetrieve?.programs?.map((each, index) => (
     <Grid item xs={12} md={4} sx={{ mb: 2 }} key={index}>
-      <ExampleCard image={each.image.url} name={each.title} subtitle={each.subtitle} pro={!each.status} links={each.links} />
+      <ExampleCard image={each.image.url} name={each.title} subtitle={each.subtitle} pro={!each.status} links={each.links} badge={each.description}/>
     </Grid>
   ));
 
