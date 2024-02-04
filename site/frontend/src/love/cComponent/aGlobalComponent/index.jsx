@@ -38,7 +38,6 @@ import brand from 'src/love/dFunction/gBrand';
 
 
 const GlobalComponent = ({ Redux, LogoutAPICall, children }) => {
-  // sadsad
   // JSX
   return (
     <React.Fragment>
